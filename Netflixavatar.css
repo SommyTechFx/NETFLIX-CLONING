@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.netflix-avatar{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    
+    
+}
+
+.icon{
+    width: 100%;
+    object-fit:contain;
+    max-height: 200px;
+    margin-right: 10px;
+   
+}
+
+.avatar{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    margin-top: 300px;
+}
+
+h2{
+    display: flex;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 50px; 
+
+}
+
+
