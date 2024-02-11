@@ -15,15 +15,15 @@
         <h2>Sign In</h2>
         <form action="#">
             <div class="form">
-                <input type="text" required>
+                <input type="email" id="email" required>
                 <label>Email or Phone number</label>
             </div>
             <div class="form">
-                <input type="password" required>
+                <input type="password" id="password" required>
                 <label>password</label>
             </div>
 
-            <button type="submit">Sign in</button>
+            <button type="submit" onclick="auth()">Sign in</button>
             <div class="form-help">
                 <div class="remember-me">
                     <input type="checkbox" id="remember-me">
@@ -40,6 +40,24 @@
             <a href="#">learn more.</a>
         </small>
     </div>
+
+    <script>
+        function auth() {
+           var Email = document.getElementById("email").value;
+            var password = document.getElementById("password").value; 
+           
+           if(Email== "learnable.@gmail.com" && password == "1234"){
+
+            window.location.assign("./NetflixMovies.html");
+            alert("Login sucessfully");
+
+           }else{
+            alert("Use Email as learnable.@gmail.com and password as 1234");
+            
+           }
+
+        }
+    </script>
 
 </body>
 </html>

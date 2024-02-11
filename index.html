@@ -12,7 +12,7 @@
         <img class="logo" src="images/logo.png" alt="">
         <div>
             <button class="language">English <img src="images/down-icon.png" alt=""></button>
-            <button>Sign In</button>
+            <a href="./NetflixSignup.html"><button>Sign In </button></a>
         </div>
       </nav>
         <div class="content">
@@ -20,8 +20,8 @@
             <h3>Watch anywhere. Cancel anytime.</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <form class="email">
-                <input type="email" placeholder="Email address" required>
-                <button type="submit">Get Started</button>
+                <input type="email" id="email" placeholder="Email address" required>
+                <button type="submit" onclick="auth()">Get Started</button>
             </form>
         </div>
     </div>
@@ -196,5 +196,21 @@
 
         <p class="copywrite">Netflix Nigeria</p>
     </div>
+
+    <script>
+        function auth() {
+           var Email = document.getElementById("email").value;
+           
+           if(Email== "learnable.@gmail.com"){
+
+            window.location.assign("./NetflixMovies.html");
+            alert("Login sucessfully");
+
+           }else{
+            alert("Use Email as learnable.@gmail.com");
+           }
+
+        }
+    </script>
 </body>
 </html>
